@@ -47,7 +47,6 @@ profiles:
 interests:
   - Creativity in LLMs
   - Reasoning in LLMs
-  - Multimodal LLMs
 
 education:
   - area: M.S. by Research in Natural language Processing
@@ -173,5 +172,4 @@ awards:
 ---
 
 ## About Me
-Hi! I am Soumya Sharma, 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Hi! I am Soumya Sharma, a PreDoctoral Researcher at Google DeepMind. I work in the Agent Quality and Understanding Algorithms (AQUA) team in the Bangalore, India office with Aravindan Raghuveer. Over the past few years, I have had the fortune of completing my M.S. by Thesis at IIT Kharagpur with Prof. Pawan Goyal and Prof. Niloy Ganguly on applications of NLP for different downstream applications. Currently, I am on the look-out for PhD opportunities in creativity and reasoning in LLMs.
