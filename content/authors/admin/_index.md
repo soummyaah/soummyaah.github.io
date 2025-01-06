@@ -84,7 +84,7 @@ work:
     company_url: https://cnerg-iitkgp.github.io/
     company_logo: ''
     date_start: 2019-02-01
-    date_end: 2023-06-31
+    date_end: 2023-06-30
     # summary: |
       # Responsibilities include:
       # - Migrated infrastructure to a new data center
