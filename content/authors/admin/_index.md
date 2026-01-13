@@ -11,7 +11,7 @@ last_name: Sharma
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: ⛷️
 
 # Is this the primary user of the site?
 superuser: true
@@ -20,12 +20,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PreDoctoral Researcher
+role: PhD student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Google DeepMind
-    url: https://deepmind.google/
+  - name: McGill University & MILA
+    url: https://www.mcgill.ca/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -45,11 +45,16 @@ profiles:
   #   url: https://orcid.org/
 
 interests:
+  - Privacy and Safety in Multi-Agent Systems
+  - Multi-Agent Systems
   - Creativity in LLMs
   - Reasoning in LLMs
 
 education:
-  - area: M.S. by Research in Natural language Processing
+  - area: PhD in CSE
+    institution: McGill & MILA
+    date_start: 2025-09-01
+  - area: M.S. by Research in CSE
     institution: IIT Kharagpur
     date_start: 2020-09-01
     date_end: 2023-06-01
@@ -72,7 +77,7 @@ work:
     company_url: https://deepmind.google/
     company_logo: ''
     date_start: 2023-07-01
-    date_end: ''
+    date_end: 2025-07-01
     # summary: |2-
     #   Responsibilities include:
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -172,4 +177,4 @@ awards:
 ---
 
 ## About Me
-Hi! I am Soumya Sharma, a PreDoctoral Researcher at Google DeepMind. I work in the Agent Quality and Understanding Algorithms (AQUA) team in the Bangalore, India office with Aravindan Raghuveer. Over the past few years, I have had the fortune of completing my M.S. by Thesis at IIT Kharagpur with Prof. Pawan Goyal and Prof. Niloy Ganguly on applications of NLP for different downstream applications. Currently, I am on the look-out for PhD opportunities in creativity and reasoning in LLMs.
+Hi! Welcome to my website. I am a PhD student at McGill University and MILA in Montreal working with [Prof. Golnoosh Farnadi](https://gfarnadi.github.io/) and [Prof. Adriana Romero Soriano](https://sites.google.com/site/adriromsor/home). I am interested in topics related to Safety and Privacy of User in Multi-Agent Systems. I have research experience as a Pre-Doctoral Researcher at Google DeepMind, where I worked with the Agent Quality and Understanding Algorithms (AQUA) team in Bangalore, India with [Dr. Aravindan Raghuveer](https://research.google/people/107631/?&type=google). I also completed my M.S. by Thesis at IIT Kharagpur under [Prof. Pawan Goyal](https://cse.iitkgp.ac.in/~pawang/) and [Prof. Niloy Ganguly](https://niloy-ganguly.github.io/), focusing on NLP applications for downstream tasks. 
