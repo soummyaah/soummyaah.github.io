@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading notes — Soumya</title>
+<meta name="description" content="Short summaries of papers on privacy, agents and interpretability.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Instrument+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="page">
+<!-- Vines: artwork in assets/vines/. Change the file, side (vine--left / vine--right) or --top to move them. -->
+<img class="vine vine--left" src="assets/vines/vine-long.svg" alt="" aria-hidden="true" style="--top: 64px;">
+<img class="vine vine--right" src="assets/vines/vine-short.svg" alt="" aria-hidden="true" style="--top: 420px;">
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main">
+    <a class="brand" href="index.html">soumya<span>.</span></a>
+    <div class="nav-links">
+      <a href="research.html">research</a>
+      <a href="projects.html">projects</a>
+      <a href="notes.html" aria-current="page">reading notes</a>
+      <a href="travel.html">travel</a>
+      <a href="kitchen.html">kitchen</a>
+      <a href="off.html">off the clock</a>
+      <a class="cv" href="#">cv ↗</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="page-intro">
+    <a class="back" href="index.html">← home</a>
+    <div class="page-title-row">
+      <span class="num">03</span>
+      <h1 class="page-title">Reading notes</h1>
+    </div>
+    <p class="page-lede">Short summaries of papers I keep thinking about. Opinions mine, errors definitely mine.</p>
+  </section>
+
+  <section class="section" aria-label="Notes">
+    <div class="chips" role="group" aria-label="Filter notes by topic" hidden>
+      <button class="chip" type="button" data-filter="all" aria-pressed="true">all</button>
+      <button class="chip" type="button" data-filter="privacy" aria-pressed="false">privacy</button>
+      <button class="chip" type="button" data-filter="agents" aria-pressed="false">agents</button>
+      <button class="chip" type="button" data-filter="interp" aria-pressed="false">interpretability</button>
+    </div>
+    <!-- Add a note: copy an <a class="note"> block. data-tag must be privacy, agents or interp. -->
+    <div class="notes">
+    <a class="note" data-tag="privacy" href="#">
+      <span class="date">[DATE]</span>
+      <span class="n-body"><span class="n-title">MAGPIE</span><span class="n-take">[Your one-line take]</span></span>
+      <span class="tag">privacy</span>
+    </a>
+    <a class="note" data-tag="agents" href="#">
+      <span class="date">[DATE]</span>
+      <span class="n-body"><span class="n-title">PAC-Bench</span><span class="n-take">[Your one-line take]</span></span>
+      <span class="tag">agents</span>
+    </a>
+    <a class="note" data-tag="privacy" href="#">
+      <span class="date">[DATE]</span>
+      <span class="n-body"><span class="n-title">PersonaBench</span><span class="n-take">[Your one-line take]</span></span>
+      <span class="tag">privacy</span>
+    </a>
+    <a class="note" data-tag="interp" href="#">
+      <span class="date">[DATE]</span>
+      <span class="n-body"><span class="n-title">[INTERP PAPER TITLE]</span><span class="n-take">[Your one-line take]</span></span>
+      <span class="tag">interpretability</span>
+    </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span><a class="brand" href="index.html">soumya<span>.</span></a> &nbsp;·&nbsp; Montréal</span>
+    <span>kept minimal on purpose · updated [DATE]</span>
+  </div>
+</footer>
+</div>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

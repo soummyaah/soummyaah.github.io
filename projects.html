@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Soumya</title>
+<meta name="description" content="Research projects by Soumya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Instrument+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="page">
+<!-- Vines: artwork in assets/vines/. Change the file, side (vine--left / vine--right) or --top to move them. -->
+<img class="vine vine--left" src="assets/vines/vine-long.svg" alt="" aria-hidden="true" style="--top: 64px;">
+<img class="vine vine--right" src="assets/vines/vine-short.svg" alt="" aria-hidden="true" style="--top: 420px;">
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main">
+    <a class="brand" href="index.html">soumya<span>.</span></a>
+    <div class="nav-links">
+      <a href="research.html">research</a>
+      <a href="projects.html" aria-current="page">projects</a>
+      <a href="notes.html">reading notes</a>
+      <a href="travel.html">travel</a>
+      <a href="kitchen.html">kitchen</a>
+      <a href="off.html">off the clock</a>
+      <a class="cv" href="#">cv ↗</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="page-intro">
+    <a class="back" href="index.html">← home</a>
+    <div class="page-title-row">
+      <span class="num">02</span>
+      <h1 class="page-title">Projects</h1>
+    </div>
+    <p class="page-lede">Benchmarks, theory and the unglamorous infrastructure that makes the experiments possible.</p>
+  </section>
+
+  <section class="section" aria-label="Projects">
+    <div class="projects" style="gap: 56px;">
+      <article class="project">
+        <span class="kind">BENCHMARK · PHD</span>
+        <h2>CIMemories Dialogue</h2>
+        <p>A two-agent dialogue benchmark for contextual-integrity violations — the testbed behind <a href="research.html"><em>Loose Lips</em></a>.</p>
+        <a class="go" href="#">repo →</a>
+      </article>
+      <article class="project">
+        <span class="kind">MULTI-AGENT RL · IN PROGRESS</span>
+        <h2>Byzantine-robust cooperative MARL</h2>
+        <p>Extending BARDec-POMDP to agents that turn adversarial with probability β — what cooperation still means when a teammate might not be one.</p>
+        <a class="go" href="#">write-up →</a>
+      </article>
+      <article class="project">
+        <span class="kind">INFRA · MILA CLUSTER</span>
+        <h2>Leakage evals at scale</h2>
+        <p>A bulk vLLM inference pipeline plus scripts for scoring privacy leakage across model families.</p>
+        <a class="go" href="#">repo →</a>
+      </article>
+      <article class="project">
+        <span class="kind">MICROSOFT RESEARCH INDIA · 2018</span>
+        <h2>EzPC</h2>
+        <p>Research internship on a framework for privacy-preserving secure multi-party computation.</p>
+        <a class="go" href="#">project →</a>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span><a class="brand" href="index.html">soumya<span>.</span></a> &nbsp;·&nbsp; Montréal</span>
+    <span>kept minimal on purpose · updated [DATE]</span>
+  </div>
+</footer>
+</div>
+</body>
+</html>

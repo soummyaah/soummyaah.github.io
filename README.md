@@ -1,52 +1,90 @@
-# [Hugo Academic CV Theme](https://github.com/HugoBlox/theme-academic-cv)
+# Soumya — personal academic website
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/)
+A plain HTML/CSS site. It has no build step and no framework. You can open `index.html` in a browser to preview it.
 
-The Hugo **Academic CV Template** empowers you to easily create your job-winning online resumé, showcase your academic publications, and create online courses or knowledge bases to grow your audience.
+```
+index.html        home (summary of everything)
+research.html     papers with tl;dr toggles
+projects.html
+notes.html        reading notes with topic filter
+travel.html
+kitchen.html
+off.html          off the clock
+assets/
+  css/style.css   all styling: colours, fonts, vine settings at the top
+  js/site.js      reading-notes filter (the only JavaScript)
+  vines/          the vine artwork, as editable SVG files
+    vine-long.svg
+    vine-short.svg
+    branch.svg    the leafy branches beside your name
+  img/            create this folder for your photos
+```
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+## Host it free on GitHub Pages
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, Hugo Blox Builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+1. Create a GitHub repository named `<your-username>.github.io`.
+2. Upload everything in this folder to it, keeping the folder structure.
+3. In the repository, go to **Settings → Pages**. Under "Build and deployment", choose **Deploy from a branch**, then pick `main` and `/ (root)`, and save.
+4. After a minute or two the site is live at `https://<your-username>.github.io`.
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+Netlify and Cloudflare Pages also work. You can drag the folder into their dashboards. McGill web space works too: upload the files as they are.
 
-[Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [get inspired by our academics and research groups](https://hugoblox.com/creators/).
+## Fill in your details
 
-The integrated [**Hugo Blox Builder**](https://hugoblox.com) and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+Everything I didn't know is in square brackets, like `[SURNAME]`, `[PAPER TITLE]` and `[DATE]`. Search all the files for `[` to find them. Links that don't point anywhere yet are `href="#"`.
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- ⬇️ **Automatically import your publications from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 💡 [Suggest an improvement](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+**Photos.** Put your images in `assets/img/`. Each placeholder has a comment right above it showing the `<img>` line to swap in. For example:
 
-## We ask you, humbly, to support this open source movement
+```html
+<img class="photo ratio-45" src="assets/img/me.jpg" alt="Soumya">
+```
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+The ratio classes are `ratio-45` (portrait), `ratio-43` (landscape) and `ratio-11` (square).
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+## Change the vines
 
-### [❤️ Click here to become a Sponsor, unlocking awesome perks such as _exclusive academic templates and blocks_](https://hugoblox.com/sponsor/)
+**Colours and shapes.** Open any file in `assets/vines/` in a text editor. The `<style>` block at the top controls the colours:
 
-<!--
-<p align="center"><a href="https://hugoblox.com/templates/" target="_blank" rel="noopener"><img src="https://hugoblox.com/uploads/readmes/academic_logo_200px.png" alt="Hugo Academic Theme for Hugo Blox Builder"></a></p>
--->
+```css
+.stem { stroke: #6E8F62; }   /* the stalk */
+.a { fill: #7FA36F; }        /* three leaf greens */
+.b { fill: #5E8A55; }
+.c { fill: #9DBE8C; }
+```
 
-## Demo image credits
+The leaf shape is the `#leaf` path. Each `<use>` line places one leaf using `translate(x y) rotate(degrees) scale(size)`. Copy a line to add a leaf, or delete one to remove it. In `branch.svg`, `.berry` sets the colour of the small berries.
 
-- [Unsplash](https://unsplash.com)
+**Placement.** Each page has a few lines near the top of `<body>` like this:
 
-## Latest news
+```html
+<img class="vine vine--left" src="assets/vines/vine-long.svg" alt="" aria-hidden="true" style="--top: 64px;">
+```
 
-<!--START_SECTION:news-->
+- To switch sides, change `vine--left` to `vine--right`. Right-side vines are mirrored automatically.
+- To move a vine down the page, change `--top`.
+- To swap the artwork, point `src` at a different SVG.
+- To remove a vine, delete its line.
 
-- [Easily make an academic CV website to get more cites and grow your audience 🚀](https://hugoblox.com/blog/easily-make-academic-website/)
-- [What&#39;s new in v5.2?](https://hugoblox.com/blog/whats-new-in-v5.2/)
-- [What&#39;s new in v5.1?](https://hugoblox.com/blog/whats-new-in-v5.1/)
-- [Version 5.0 (February 2021)](https://hugoblox.com/blog/version-5.0-february-2021/)
-- [Version 5.0 Beta 3 (February 2021)](https://hugoblox.com/blog/version-5.0-beta-3-february-2021/)
-<!--END_SECTION:news-->
+**Size and strength.** Edit these at the top of `style.css`:
+
+```css
+--vine-width: 140px;
+--vine-opacity: 1;
+```
+
+The vines fade on smaller screens so they don't compete with the text. To hide them on one page, add `class="no-vines"` to that page's `<body>`.
+
+**Your own artwork.** You can drop in any transparent SVG or PNG, for example an illustration you've drawn or licensed. Point the `src` at it.
+
+## Change the accent colour
+
+Set `--accent` at the top of `style.css`. Suggested alternatives are in the comment next to it. If you change it, also update `.berry` in `branch.svg` so the berries match.
+
+## Add content
+
+- **News item:** copy a `<div class="news-item">` line in `index.html`.
+- **Paper:** copy an `<article class="paper">` block in `research.html`. The tl;dr is a `<details>` element, so it works without JavaScript.
+- **Reading note:** copy an `<a class="note">` block in `notes.html`. Set `data-tag` to `privacy`, `agents` or `interp` so the filter picks it up.
+- **Travel stamp:** copy a `<div class="stamp">`. `--tilt` sets how crooked the stamp sits.
+
+The home page shows summaries, so when you add something important, add it to `index.html` as well as its own page.

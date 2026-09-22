@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 140 1000" width="140" height="1000">
+  <!--
+    Long hanging vine (used on the left edge of every page).
+    EDIT COLOURS in the <style> block below:
+      .stem / .tendril = the stalk,  .a / .b / .c = three leaf greens.
+    EDIT SHAPE: the leaf outline is #leaf; the stalk is the .stem path.
+    ADD A LEAF: copy a <use> line and change translate(x y) rotate(deg) scale(n).
+      rotate near 0 points right, near 180 points left.
+  -->
+  <style>
+    .stem    { fill: none; stroke: #6E8F62; stroke-width: 2; stroke-linecap: round; }
+    .tendril { fill: none; stroke: #6E8F62; stroke-width: 1.2; }
+    .a { fill: #7FA36F; }
+    .b { fill: #5E8A55; }
+    .c { fill: #9DBE8C; }
+  </style>
+  <defs>
+    <path id="leaf" d="M0 0 C6 -9 20 -11 30 0 C20 11 6 9 0 0 Z"/>
+  </defs>
+
+  <path class="stem" d="M18 0 C70 70 8 150 58 230 S28 390 76 470 S34 630 66 750 S28 880 50 990"/>
+  <path class="tendril" d="M58 230 C84 214 98 232 90 246 C84 256 72 250 76 242"/>
+  <path class="tendril" d="M66 750 C92 736 104 756 94 768 C88 774 80 770 82 764"/>
+
+  <use href="#leaf" xlink:href="#leaf" class="a" transform="translate(30 40) rotate(-30) scale(1.1)"/>
+  <use href="#leaf" xlink:href="#leaf" class="b" transform="translate(36 70) rotate(200)"/>
+  <use href="#leaf" xlink:href="#leaf" class="c" transform="translate(34 120) rotate(-15) scale(1.2)"/>
+  <use href="#leaf" xlink:href="#leaf" class="a" transform="translate(30 160) rotate(170) scale(0.9)"/>
+  <use href="#leaf" xlink:href="#leaf" class="b" transform="translate(46 205) rotate(-40) scale(1.1)"/>
+  <use href="#leaf" xlink:href="#leaf" class="a" transform="translate(52 260) rotate(190) scale(1.2)"/>
+  <use href="#leaf" xlink:href="#leaf" class="c" transform="translate(40 320) rotate(10)"/>
+  <use href="#leaf" xlink:href="#leaf" class="b" transform="translate(40 360) rotate(160) scale(1.1)"/>
+  <use href="#leaf" xlink:href="#leaf" class="a" transform="translate(56 420) rotate(-25) scale(1.3)"/>
+  <use href="#leaf" xlink:href="#leaf" class="c" transform="translate(70 470) rotate(200)"/>
+  <use href="#leaf" xlink:href="#leaf" class="b" transform="translate(62 520) rotate(-10) scale(1.1)"/>
+  <use href="#leaf" xlink:href="#leaf" class="a" transform="translate(50 580) rotate(175) scale(1.2)"/>
+  <use href="#leaf" xlink:href="#leaf" class="c" transform="translate(50 640) rotate(-35) scale(0.9)"/>
+  <use href="#leaf" xlink:href="#leaf" class="b" transform="translate(60 700) rotate(195) scale(1.1)"/>
+  <use href="#leaf" xlink:href="#leaf" class="a" transform="translate(64 760) rotate(-20)"/>
+  <use href="#leaf" xlink:href="#leaf" class="c" transform="translate(50 820) rotate(165)"/>
+  <use href="#leaf" xlink:href="#leaf" class="b" transform="translate(40 880) rotate(-30) scale(0.9)"/>
+  <use href="#leaf" xlink:href="#leaf" class="a" transform="translate(46 940) rotate(190) scale(0.8)"/>
+  <circle class="c" cx="50" cy="990" r="3"/>
+</svg>
