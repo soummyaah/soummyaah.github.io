@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects — Soumya</title>
-<meta name="description" content="Research projects by Soumya.">
+<title>Projects — Soumya Sharma</title>
+<meta name="description" content="Research projects by Soumya Sharma.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Instrument+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
@@ -26,7 +26,7 @@
       <a href="travel.html">travel</a>
       <a href="kitchen.html">kitchen</a>
       <a href="off.html">off the clock</a>
-      <a class="cv" href="#">cv ↗</a>
+      <a class="cv" href="assets/docs/Soumya_Sharma_CV.pdf">cv ↗</a>
     </div>
   </nav>
 </header>
@@ -39,44 +39,102 @@
       <span class="num">02</span>
       <h1 class="page-title">Projects</h1>
     </div>
-    <p class="page-lede">Benchmarks, theory and the unglamorous infrastructure that makes the experiments possible.</p>
+    <p class="page-lede">Benchmarks, agents, evaluations and the unglamorous infrastructure that makes the experiments possible.</p>
   </section>
-
-  <section class="section" aria-label="Projects">
-    <div class="projects" style="gap: 56px;">
+  <section class="section" style="padding-bottom: 80px;">
+    <h2 class="group-title" style="margin-bottom: 28px;">Mila · EQUAL Lab</h2>
+    <div class="projects">
       <article class="project">
         <span class="kind">BENCHMARK · PHD</span>
-        <h2>CIMemories Dialogue</h2>
-        <p>A two-agent dialogue benchmark for contextual-integrity violations — the testbed behind <a href="research.html"><em>Loose Lips</em></a>.</p>
-        <a class="go" href="#">repo →</a>
+        <h3>Privacy leakage in multi-agent dialogue</h3>
+        <p>A two-agent dialogue benchmark that isolates what makes LLM agents leak private information, and how the leakage compounds turn by turn.</p>
+        <a class="go" href="research.html">paper →</a>
+      </article>
+      <article class="project">
+        <span class="kind">BENCHMARK · COLLABORATION</span>
+        <h3>IDP-Bench</h3>
+        <p>Testing whether LLMs protect people who are implicated by someone else’s data, through the lens of contextual integrity.</p>
+        <a class="go" href="research.html">paper →</a>
+      </article>
+      <article class="project">
+        <span class="kind">EVALUATION · COLLABORATION</span>
+        <h3>IDEAFix</h3>
+        <p>An evaluation framework for creative defixation prompting, which uncovered hive-mind behaviour across models.</p>
+        <a class="go" href="research.html">paper →</a>
       </article>
       <article class="project">
         <span class="kind">MULTI-AGENT RL · IN PROGRESS</span>
-        <h2>Byzantine-robust cooperative MARL</h2>
+        <h3>Byzantine-robust cooperative MARL</h3>
         <p>Extending BARDec-POMDP to agents that turn adversarial with probability β — what cooperation still means when a teammate might not be one.</p>
         <a class="go" href="#">write-up →</a>
       </article>
       <article class="project">
         <span class="kind">INFRA · MILA CLUSTER</span>
-        <h2>Leakage evals at scale</h2>
+        <h3>Leakage evals at scale</h3>
         <p>A bulk vLLM inference pipeline plus scripts for scoring privacy leakage across model families.</p>
         <a class="go" href="#">repo →</a>
       </article>
+    </div>
+  </section>
+  <section class="section" style="padding-bottom: 80px;">
+    <h2 class="group-title" style="margin-bottom: 28px;">Google DeepMind · AQUA team, 2023–25</h2>
+    <div class="projects">
       <article class="project">
-        <span class="kind">MICROSOFT RESEARCH INDIA · 2018</span>
-        <h2>EzPC</h2>
-        <p>Research internship on a framework for privacy-preserving secure multi-party computation.</p>
-        <a class="go" href="#">project →</a>
+        <span class="kind">REWARD MODELING</span>
+        <h3>Dimension-wise raters for creative outputs</h3>
+        <p>Trained raters for individual quality dimensions using synthetic data generation. The methodology fed into the ICLR 2025 MoFA paper on causal rubrics.</p>
+        <a class="go" href="research.html">paper →</a>
+      </article>
+      <article class="project">
+        <span class="kind">SELF-IMPROVING AGENTS</span>
+        <h3>Critique-then-refine creative agents</h3>
+        <p>LLM agents that critique and revise their own creative writing, plus a pairwise evaluation protocol. Reached an 81.25% win rate over a Gemini baseline on a creativity benchmark.</p>
+      </article>
+      <article class="project">
+        <span class="kind">AGENTIC PIPELINES</span>
+        <h3>Style transfer with planning agents</h3>
+        <p>Led an unsupervised text style transfer project using LLM-based planning agents, improving on the state of the art by 15–40% across four datasets.</p>
       </article>
     </div>
   </section>
-
+  <section class="section" style="padding-bottom: 80px;">
+    <h2 class="group-title" style="margin-bottom: 28px;">IIT Kharagpur · CNeRG Lab, 2019–23</h2>
+    <div class="projects">
+      <article class="project">
+        <span class="kind">INDUSTRY · GOLDMAN SACHS</span>
+        <h3>Financial document understanding</h3>
+        <p>Datasets and models for numeric labelling (FNXL), relation extraction (FinRED), causality extraction and table understanding in financial documents.</p>
+        <a class="go" href="https://github.com/soummyaah/FinRED">FinRED code →</a>
+      </article>
+      <article class="project">
+        <span class="kind">INDUSTRY · SAMSUNG R&amp;D</span>
+        <h3>Knowledge-graph completion</h3>
+        <p>Knowledge-graph completion with hyperbolic embeddings.</p>
+      </article>
+      <article class="project">
+        <span class="kind">CLINICAL NLP</span>
+        <h3>Medical NLI with knowledge graphs</h3>
+        <p>Injecting UMLS knowledge into natural language inference over clinical text (EMNLP 2019).</p>
+        <a class="go" href="research.html">paper →</a>
+      </article>
+    </div>
+  </section>
+  <section class="section" style="padding-bottom: 80px;">
+    <h2 class="group-title" style="margin-bottom: 28px;">Microsoft Research India, 2018</h2>
+    <div class="projects">
+      <article class="project">
+        <span class="kind">PRIVACY-PRESERVING ML</span>
+        <h3>EzPC</h3>
+        <p>Built an OCaml-to-C++ transpiler, formalized the EzPC language, and benchmarked it on a decision-tree workload — a secure multi-party computation framework for ML.</p>
+      </article>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <span><a class="brand" href="index.html">soumya<span>.</span></a> &nbsp;·&nbsp; Montréal</span>
-    <span>kept minimal on purpose · updated [DATE]</span>
+    <span><a class="brand" href="index.html">soumya<span>.</span></a> &nbsp;·&nbsp; Montréal &nbsp;·&nbsp; <a href="mailto:soumyasharma20@gmail.com">soumyasharma20@gmail.com</a></span>
+    <span>kept minimal on purpose · updated Sep 2026</span>
   </div>
 </footer>
 </div>

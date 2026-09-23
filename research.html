@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research — Soumya</title>
-<meta name="description" content="Papers by Soumya on privacy and contextual integrity in multi-agent LLM systems.">
+<title>Research — Soumya Sharma</title>
+<meta name="description" content="Papers on privacy, safety and alignment in multi-agent LLM systems.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Instrument+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
@@ -26,7 +26,7 @@
       <a href="travel.html">travel</a>
       <a href="kitchen.html">kitchen</a>
       <a href="off.html">off the clock</a>
-      <a class="cv" href="#">cv ↗</a>
+      <a class="cv" href="assets/docs/Soumya_Sharma_CV.pdf">cv ↗</a>
     </div>
   </nav>
 </header>
@@ -39,54 +39,135 @@
       <span class="num">01</span>
       <h1 class="page-title">Research</h1>
     </div>
-    <p class="page-lede">I work on privacy and safety in multi-agent LLM systems — in particular, benchmarking contextual-integrity violations: when an agent shares something that was fine to know but not fine to pass on.</p>
-    <a class="back" href="#">full list on Google Scholar ↗</a>
+    <p class="page-lede">I research safety, privacy and alignment in multi-agent LLM systems: benchmark and evaluation design, adversarial probing for privacy leakage, reward modeling, and red-teaming of agentic systems.</p>
+    <a class="back" href="https://scholar.google.com/citations?user=LBNLcm8AAAAJ">full list on Google Scholar ↗</a>
   </section>
 
-  <section class="section" aria-label="Papers">
+  <section class="section" aria-labelledby="g1" style="padding-bottom: 72px;">
+    <h2 id="g1" class="group-title">Privacy &amp; safety in multi-agent systems</h2>
     <div class="papers">
-
     <article class="paper">
-      <div class="venue"><b>EMNLP</b>2026</div>
+      <div class="venue"><b>COLM 2026</b>HAIPS workshop · oral</div>
       <div class="paper-body">
-        <h2 class="paper-title"><a href="#">Loose Lips: [FULL TITLE]</a></h2>
-        <p class="authors"><strong>Soumya [SURNAME]</strong>, [CO-AUTHORS]</p>
-        <div class="links"><a href="#">pdf</a><a href="#">code</a><a href="#">benchmark</a><a href="#">bib</a></div>
+        <h2 class="paper-title"><a href="#">Benchmarking privacy leakage in multi-agent systems</a></h2>
+        <p class="authors"><strong>Soumya Sharma</strong>, Ayana Hussain, Héber Hwang Arcolezi, Ulrich Aïvodji, Spandana Gella, Adriana Romero Soriano, Golnoosh Farnadi</p>
+        <div class="links"><a href="#">pdf</a><a href="#">code</a><a href="#">bib</a></div>
         <details class="tldr">
           <summary>tl;dr</summary>
-          <p>We extend CIMemories into a two-agent dialogue benchmark and test Qwen3, Llama 3.1 and Gemma families. Three things stand out: more capable and reasoning models leak <em>more</em>, leakage compounds over turns, and prompt-based mitigations only get you so far.</p>
+          <p>A benchmark for what actually drives privacy leakage when LLM agents talk to each other. Across Qwen3, Llama 3.1 and Gemma models, more capable and reasoning models leak <em>more</em>, leakage compounds over turns, and prompt-based mitigations only go so far. Also presented at WiML.</p>
         </details>
       </div>
     </article>
     <article class="paper">
-      <div class="venue"><b>AI &amp; Ethics</b>[YEAR]</div>
+      <div class="venue"><b>[VENUE]</b>[YEAR]</div>
       <div class="paper-body">
-        <h2 class="paper-title"><a href="#">[PAPER TITLE]</a></h2>
-        <p class="authors"><strong>Soumya [SURNAME]</strong>, Ayana Hussain, Héber Hwang Arcolezi, Ulrich Aïvodji</p>
+        <h2 class="paper-title"><a href="#">IDP-Bench: Benchmarking ability of LLMs to protect personal information in interdependent privacy contexts</a></h2>
+        <p class="authors">Ayana Hussain, <strong>Soumya Sharma</strong>, Golnoosh Farnadi, Nicholas Vincent, Héber Hwang Arcolezi, Ulrich Aïvodji</p>
         <div class="links"><a href="#">pdf</a><a href="#">bib</a></div>
         <details class="tldr">
           <summary>tl;dr</summary>
-          <p>[TWO-SENTENCE PLAIN-LANGUAGE SUMMARY]</p>
+          <p>Evaluates whether LLMs respect contextual integrity when one user’s data also reveals something about other people.</p>
+        </details>
+      </div>
+    </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="g2" style="padding-bottom: 72px;">
+    <h2 id="g2" class="group-title">Alignment &amp; evaluation</h2>
+    <div class="papers">
+    <article class="paper">
+      <div class="venue"><b>ICML 2026</b>Human CoCreativity workshop</div>
+      <div class="paper-body">
+        <h2 class="paper-title"><a href="#">IDEAFix: Evaluation Framework for Creative Defixation Prompting in LLMs</a></h2>
+        <p class="authors">Florian Carichon, <strong>Soumya Sharma</strong>, Meaghan J. Girard, Romain Rampa, Golnoosh Farnadi</p>
+        <div class="links"><a href="#">pdf</a><a href="#">bib</a></div>
+        <details class="tldr">
+          <summary>tl;dr</summary>
+          <p>An evaluation framework for creativity in LLMs. It surfaces a hive-mind behaviour: different models converge on strikingly similar ideas in creative tasks. Under review at NeurIPS 2026.</p>
         </details>
       </div>
     </article>
     <article class="paper">
-      <div class="venue"><b>ACL · EMNLP · WWW</b>IIT Kharagpur</div>
+      <div class="venue"><b>ICLR 2025</b>MoFA workshop</div>
       <div class="paper-body">
-        <h2 class="paper-title">Six first-author papers on financial NLP and clinical NLI / QA</h2>
-        <p class="authors">M.S. work with Pawan Goyal and Niloy Ganguly, CNeRG lab</p>
-        <div class="links"><a href="#">thesis</a></div>
+        <h2 class="paper-title"><a href="#">Robust Reward Modeling via Causal Rubrics</a></h2>
+        <p class="authors">Pragya Srivastava, …, <strong>Soumya Sharma</strong>, …, Karthikeyan Shanmugam, Doina Precup</p>
+        <div class="links"><a href="#">pdf</a><a href="#">bib</a></div>
         <details class="tldr">
-          <summary>list</summary>
-          <ul>
-            <li>[PAPER TITLE] — ACL [YEAR]</li>
-            <li>[PAPER TITLE] — EMNLP [YEAR]</li>
-            <li>[PAPER TITLE] — WWW [YEAR]</li>
-            <li>[+ THREE MORE]</li>
-          </ul>
+          <summary>tl;dr</summary>
+          <p>Uses causal structure over rubric dimensions to train reward models that are robust to spurious correlations. My dimension-wise rater methodology from Google DeepMind fed into this work.</p>
         </details>
       </div>
     </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="g3" style="padding-bottom: 72px;">
+    <h2 id="g3" class="group-title">Earlier: NLP at IIT Kharagpur</h2>
+    <div class="papers">
+    <article class="paper">
+      <div class="venue"><b>ACL 2023</b>Findings</div>
+      <div class="paper-body">
+        <h2 class="paper-title"><a href="https://arxiv.org/abs/2306.03723">Financial Numeric Extreme Labelling: A Dataset and Benchmarking</a></h2>
+        <p class="authors"><strong>Soumya Sharma</strong>, Subhendu Khatuya, Manjunath Hegde, Afreen Shaikh, Koustuv Dasgupta, Pawan Goyal, Niloy Ganguly</p>
+        <div class="links"><a href="https://arxiv.org/abs/2306.03723">arxiv</a><a href="#">bib</a></div>
+        <details class="tldr">
+          <summary>tl;dr</summary>
+          <p>A dataset and benchmark for tagging numbers in financial filings with XBRL labels, drawn from thousands of possible tags. Built with Goldman Sachs.</p>
+        </details>
+      </div>
+    </article>
+    <article class="paper">
+      <div class="venue"><b>EMNLP 2019</b>EMNLP-IJCNLP</div>
+      <div class="paper-body">
+        <h2 class="paper-title"><a href="#">Incorporating Domain Knowledge into Medical NLI using Knowledge Graphs</a></h2>
+        <p class="authors"><strong>Soumya Sharma</strong>*, Bishal Santra*, Abhik Jana, Santosh Tokala, Niloy Ganguly, Pawan Goyal</p>
+        <div class="links"><a href="#">pdf</a><a href="#">bib</a></div>
+        <details class="tldr">
+          <summary>tl;dr</summary>
+          <p>Brings structured medical knowledge from the UMLS knowledge graph into natural language inference over clinical text. (* equal contribution)</p>
+        </details>
+      </div>
+    </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="g4" style="padding-bottom: 72px;">
+    <h2 id="g4" class="label" style="margin-bottom: 12px;">Also contributed to</h2>
+    <ul class="more-pubs">
+      <li><span class="v">EMNLP 2022</span><a href="https://aclanthology.org/2022.emnlp-main.748/">ECTSum: A New Benchmark Dataset for Bullet Point Summarization of Long Earnings Call Transcripts</a> <span class="muted">— Mukherjee et al.</span></li>
+      <li><span class="v">Findings EMNLP 2022</span><a href="#">Realistic Data Augmentation Framework for Enhancing Tabular Reasoning</a> <span class="muted">— Kumar, Gupta, Sharma, Zhang</span></li>
+      <li><span class="v">WWW 2022</span><a href="https://dl.acm.org/doi/10.1145/3487553.3524637">FinRED: A Dataset for Relation Extraction in Financial Domain</a> <span class="muted">— Sharma et al. · FinWeb workshop</span></li>
+      <li><span class="v">WWW 2022</span><a href="#">A Generative Approach for Financial Causality Extraction</a> <span class="muted">— Nayak, Sharma et al. · FinWeb workshop</span></li>
+      <li><span class="v">Findings EMNLP 2021</span><a href="https://aclanthology.org/2021.findings-emnlp.392/">Question Answering over Electronic Devices: A New Benchmark Dataset and a Multi-Task Learning based QA Framework</a> <span class="muted">— Nandy, Sharma et al.</span></li>
+    </ul>
+  </section>
+
+  <section class="section" aria-label="Teaching, service and awards">
+    <div class="facts" style="margin-bottom: 48px;">
+      <h2 class="label">Teaching</h2>
+      <div>
+        <div class="fact"><span class="when">McGill · Fall 2026</span><span>Computational Linguistics (TA)</span></div>
+        <div class="fact"><span class="when">McGill · Winter 2026</span><span>Natural Language Processing (TA)</span></div>
+        <div class="fact"><span class="when">IIT Kharagpur · 2020–22</span><span>AI Ethics, NLP, Algorithms, and Programming &amp; Data Structures (TA)</span></div>
+        <div class="fact"><span class="when">IIT Kharagpur</span><span>Led a mentor program for 8 B.Tech, M.Tech and internship students</span></div>
+      </div>
+    </div>
+    <div class="facts" style="margin-bottom: 48px;">
+      <h2 class="label">Reviewing</h2>
+      <div>
+        <div class="fact"><span class="when">ACL</span><span>January 2026, May 2026, ACL 2024</span></div>
+        <div class="fact"><span class="when">EMNLP / NAACL</span><span>EMNLP 2023, NAACL 2024</span></div>
+      </div>
+    </div>
+    <div class="facts">
+      <h2 class="label">Awards</h2>
+      <div>
+        <div class="fact"><span class="when">CIFAR</span><span>AI Safety School — selected participant</span></div>
+        <div class="fact"><span class="when">McGill / Mila</span><span>Professor Cho Diversity Scholarship</span></div>
+        <div class="fact"><span class="when">Qualcomm, 2021</span><span>Innovation Fellowship finalist, for “Question Answering in E-Manuals”</span></div>
+      </div>
     </div>
   </section>
 
@@ -94,8 +175,8 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <span><a class="brand" href="index.html">soumya<span>.</span></a> &nbsp;·&nbsp; Montréal</span>
-    <span>kept minimal on purpose · updated [DATE]</span>
+    <span><a class="brand" href="index.html">soumya<span>.</span></a> &nbsp;·&nbsp; Montréal &nbsp;·&nbsp; <a href="mailto:soumyasharma20@gmail.com">soumyasharma20@gmail.com</a></span>
+    <span>kept minimal on purpose · updated Sep 2026</span>
   </div>
 </footer>
 </div>
