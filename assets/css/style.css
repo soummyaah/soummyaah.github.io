@@ -67,7 +67,7 @@ img { max-width: 100%; }
 .page {
   position: relative;
   z-index: 0;            /* lets vines sit behind content but above the background */
-  overflow-x: hidden;
+  overflow: clip;        /* clips vines without creating a scroll container */
   min-height: 100vh;
 }
 
@@ -233,6 +233,17 @@ img { max-width: 100%; }
 /* News */
 .news { display: grid; grid-template-columns: 160px minmax(0, 1fr); border-top: 1px solid var(--ink); }
 .news .label { padding: 18px 0; }
+.news > div {
+  max-height: 340px;
+  overflow-y: auto;
+  padding-right: 14px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+.news > div::-webkit-scrollbar { width: 6px; }
+.news > div::-webkit-scrollbar-track { background: transparent; }
+.news > div::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+.news > div::-webkit-scrollbar-thumb:hover { background: var(--stamp); }
 .news-item {
   display: grid;
   grid-template-columns: 120px minmax(0, 1fr);
